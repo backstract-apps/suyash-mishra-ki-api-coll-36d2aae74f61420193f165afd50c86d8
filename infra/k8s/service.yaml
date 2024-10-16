@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: suyash-mishra-ki-api-coll-36d2aae74f61420193f165afd50c86d8-srv
+spec:
+  selector:
+    app: suyash-mishra-ki-api-coll-36d2aae74f61420193f165afd50c86d8
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 9004
+  type: LoadBalancer

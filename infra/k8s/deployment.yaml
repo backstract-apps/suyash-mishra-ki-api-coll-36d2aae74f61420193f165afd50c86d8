@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: suyash-mishra-ki-api-coll-36d2aae74f61420193f165afd50c86d8-depl
+  labels:
+    app: suyash-mishra-ki-api-coll-36d2aae74f61420193f165afd50c86d8
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: suyash-mishra-ki-api-coll-36d2aae74f61420193f165afd50c86d8
+  template:
+    metadata:
+      labels:
+        app: suyash-mishra-ki-api-coll-36d2aae74f61420193f165afd50c86d8
+    spec:
+      containers:
+        - name: suyash-mishra-ki-api-coll-36d2aae74f61420193f165afd50c86d8
+          image: 216084506783.dkr.ecr.ap-south-1.amazonaws.com/backstract_apps:suyash-mishra-ki-api-coll-36d2aae74f61420193f165afd50c86d8
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 9004
